@@ -7,7 +7,7 @@
 
 `$ pip install -r requirements.txt`
 
-`$ py manage.py makemigrations`
+`$ py manage.py makemigrations blog blogadmin`
 
 `$ py manage.py migrate`
 
@@ -57,7 +57,7 @@
 
 ### Templatesfrom templatemo.com
 
-### Screenshots
+## Screenshots
 
 ![](https://raw.githubusercontent.com/burakkarabiyik/Blog-Django/main/screenshots/index.png)
 

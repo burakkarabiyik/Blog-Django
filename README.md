@@ -46,6 +46,8 @@
     + about
     + contact
     + _post
+    + login
+    + register
 + /admin/
     + admin/articles/
     + admin/accounts/

@@ -59,8 +59,18 @@
 
 ### Screenshots
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+![](https://raw.githubusercontent.com/burakkarabiyik/Blog-Django/main/screenshots/index.png)
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+> Index Page
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+![](https://raw.githubusercontent.com/burakkarabiyik/Blog-Django/main/screenshots/login.png)
+
+> Login Page
+
+![](https://raw.githubusercontent.com/burakkarabiyik/Blog-Django/main/screenshots/register.png)
+
+> Register Page
+
+![](https://raw.githubusercontent.com/burakkarabiyik/Blog-Django/main/screenshots/dashboard.png)
+
+> Dashboard Page

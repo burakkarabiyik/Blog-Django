@@ -8,7 +8,7 @@
           <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
             <div class="row">
               <div class="col-12">
-                <h2 class="tm-block-title d-inline-block">Add Product</h2>
+                <h2 class="tm-block-title d-inline-block">Add Article</h2>
               </div>
             </div>
             <div class="row tm-edit-product-row">
@@ -49,6 +49,7 @@
                       class="custom-select tm-select-accounts"
                       id="category"
                       name="category"
+                      required
                     >
                       
                       {%if kategoriler|length > 1%}
@@ -85,11 +86,12 @@
                     class="btn btn-primary btn-block mx-auto"
                     value="UPLOAD PRODUCT IMAGE"
                     onclick="document.getElementById('fileInput').click();"
+                    required
                   />
                 </div>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-primary btn-block text-uppercase">Add Product Now</button>
+                <button type="submit" class="btn btn-primary btn-block text-uppercase">Add Article Now</button>
               </div>
             </form>
             </div>

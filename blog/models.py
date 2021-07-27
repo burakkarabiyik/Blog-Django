@@ -7,12 +7,7 @@ import string
 import random
 # Create your models here.
 
-Category = [
-    ('Software', "Yazılım"),
-    ('Product', "Ürün"),
-    ('Game', "Oyun"),
-    ('Food', "Yemek"),
-]
+
 
 
 def rand_slug():

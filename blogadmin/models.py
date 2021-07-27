@@ -4,12 +4,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 # Create your models here.
 
-def validate_even(value):
-    if value < 18:
-        raise ValidationError(
-            _('%(value)s is < 18'),
-            params={'value': value},
-        )
+
 
 class customUserManager(BaseUserManager):
     def create_user(self, username, password, ad, soyad, yas, **extra_field):
@@ -33,7 +28,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     password = models.CharField(max_length=40, verbose_name="Şifre")
     ad = models.CharField(max_length=40, verbose_name="Ad")
     soyad = models.CharField(max_length=40, verbose_name="Soyad")
-    yas = models.IntegerField(validators = [validate_even], verbose_name="Yaş")
+    yas = models.IntegerField(verbose_name="Yaş")
     is_admin = models.BooleanField(default=False, verbose_name="Admin?")
     is_yazar = models.BooleanField(default=False, verbose_name="Yazar mı?")
 

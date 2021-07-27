@@ -123,7 +123,6 @@ def add(request):
 
 
 def productdetails(request, value):
-
     context = dict()
     makale = get_object_or_404(Post, slug=value)
     if request.POST:
@@ -141,7 +140,7 @@ def productdetails(request, value):
             post.save()
             redirect('/admin/products/')
     context['makale'] = makale
-    context['kategoriler'] = ['yazılım', 'product', 'devops']
+    context['kategoriler'] = MyCategories.objects.all()
     context['slug'] = value
     return render(request, 'admin/edit-product.html', context)
 
@@ -214,9 +213,9 @@ def addcategory(request):
                 kategori = MyCategories.objects.create(
                     categoryname=request.POST.get("categoryname"))
                 kategori.save()
-                return redirect('/admin/products')
+                return redirect('/admin/articles')
         else:
-            return redirect('/admin/products')
+            return redirect('/admin/articles')
     return render(request, 'admin/add-kategori.html')
 
 

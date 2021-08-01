@@ -1,5 +1,5 @@
 from typing import Dict
-from django.shortcuts import redirect, render, get_object_or_404, Http404
+from django.shortcuts import render, get_object_or_404
 from blog.models import MyCategories, Post
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponseNotFound

@@ -23,7 +23,7 @@ class customUserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')
     username = models.CharField(max_length=40, verbose_name="Kullanıcı Adı", unique=True)
     password = models.CharField(max_length=40, verbose_name="Şifre")
     ad = models.CharField(max_length=40, verbose_name="Ad")

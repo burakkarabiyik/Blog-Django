@@ -17,6 +17,7 @@
 
 > http://localhost:8000/login/
 
++ Live -> https://django-blog-brk.herokuapp.com/
 ## Database sqlite
 
 + MyCategories
